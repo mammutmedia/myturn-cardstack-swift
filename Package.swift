@@ -2,20 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "CardStack",
+    name: "MTCardStack",
     platforms: [
         .iOS(.v13),
         .watchOS(.v6),
         .macOS(.v10_15)
     ],
     products: [
-        .library(name: "CardStack", targets: ["CardStack"])
+        .library(name: "MTCardStack", targets: ["MTCardStack"])
     ],
     dependencies: [
-        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.7.2")
+        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.9.0")
     ],
     targets: [
-        .target(name: "CardStack", dependencies: []),
-        .testTarget(name: "CardStackTests", dependencies: ["CardStack", "SnapshotTesting"])
+        .target(name: "MTCardStack", dependencies: []),
+        .testTarget(name: "MTCardStackTests", dependencies: ["MTCardStack", "SnapshotTesting"])
     ]
 )

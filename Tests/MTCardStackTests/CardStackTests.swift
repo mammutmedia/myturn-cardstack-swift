@@ -2,7 +2,7 @@ import SnapshotTesting
 import SwiftUI
 import XCTest
 
-@testable import CardStack
+@testable import MTCardStack
 
 final class CardStackTests: XCTestCase {
     

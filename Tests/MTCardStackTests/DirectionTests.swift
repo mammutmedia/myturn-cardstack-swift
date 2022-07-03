@@ -1,4 +1,4 @@
-import CardStack
+import MTCardStack
 import XCTest
 
 final class DirectionTests: XCTestCase {
